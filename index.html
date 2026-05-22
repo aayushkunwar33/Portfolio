@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(6, 29, 29);
+    }
+    .p{
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .home {
+      color: rgb(254, 252, 252);
+      text-decoration: none;
+      position: absolute; 
+      top: 20px;
+      left: 500px;
+    }
+
+    .about {
+      color: rgb(251, 254, 251);
+      text-decoration: none;
+      position: absolute;
+      top: 20px;
+      left: 580px;
+    }
+
+    .skills {
+      color: rgb(246, 246, 249);
+      text-decoration: none;
+      position: absolute;
+      top: 20px;
+      left: 660px;
+    }
+
+    .projects {
+      color: rgb(249, 247, 245);
+      text-decoration: none;
+      position: absolute;
+      top: 20px;
+      left: 740px;
+    }
+
+    .contact {
+      color: rgb(246, 243, 246);
+      text-decoration: none;
+      position: absolute;
+      top: 20px;
+      left: 820px;      
+    }
+    .zoro {
+      position: absolute;
+      top: 90px;
+      left: 12%;
+      width: 300px;
+      height: auto;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 10px;
+      border-color: rgb(172, 16, 229);
+    }
+
+    .facebook button {
+      position: absolute;
+      top: 300px;
+      right: 280px;
+      background-color: rgb(59, 89, 152);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    .insta button {
+      position: absolute;
+      top: 300px;
+      right: 200px;
+      background-color: rgb(193, 53, 132);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    .linkdin button {
+      position: absolute;
+      top: 300px;
+      right: 120px;
+      background-color: rgb(0, 119, 181);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body class="body">
+  <p style="color: white; font-size: 24px; text-align: center; margin-top: 100px;">
+    Welcome to my website!
+  </p>  
+  <p style="color: white; font-size: 18px; text-align: center; margin-top: 20px;">
+   Hi ! It,s me <span style="color: rgb(243, 8, 204); size: 30px;">Zoro</span> </p>
+    
+   <p id="text" style="color: white; font-size: 18px; text-align: center; margin-top: 20px;">
+      I am the first mate of the Straw Hat Pirates,
+  </p>
+
+<script>
+  const words = [ "I am the first mate of the Straw Hat Pirates.",
+                  "I am going to be the greatest swordsman in the world."];
+  let index = 0;
+
+  const textElement = document.getElementById("text");
+
+  setInterval(() => {
+    textElement.textContent = words[index];
+    
+    index++;
+
+    if (index >= words.length) {
+      index = 0; // restart from beginning
+    }
+  }, 2000); // 1000ms = 1 second
+</script>
+
+
+  <img class="zoro" src="zoro.jpg" alt="Zoro" style="display: block; margin: 0 auto;" >
+  <a class="home" href="index.html">Home</a>
+  <a class="about" href="about.html">About</a>
+  <a class="skills" href="skills.html">Skills</a>
+  <a class="projects" href="projects.html">Projects</a>
+  <a class="contact" href="contact.html">Contact</a>
+
+  <a  class="facebook" href="https://www.facebook.com" style="position: absolute; top: 20px; left: 900px;"><button>Facebook</button></a>   
+  <a class="insta" href="https://www.instagram.com" style="position: absolute; top: 20px; left: 1000px;"><button>Instagram</button></a>
+  <a class="linkdin" href="https://www.linkedin.com" style="position: absolute; top: 20px; left: 1100px;"><button>LinkedIn</button></a> 
+
+</body>
+</html>
